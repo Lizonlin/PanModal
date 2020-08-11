@@ -14,7 +14,7 @@ import UIKit
 public extension PanModalPresentable where Self: UIViewController {
 
     var topOffset: CGFloat {
-        return topLayoutOffset + 21.0
+        return topLayoutOffset
     }
 
     var shortFormHeight: PanModalHeight {
