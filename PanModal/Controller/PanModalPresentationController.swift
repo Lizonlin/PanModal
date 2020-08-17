@@ -665,6 +665,10 @@ private extension PanModalPresentationController {
          Once presentedView is translated below shortForm, calculate yPos relative to bottom of screen
          and apply percentage to backgroundView alpha
          */
+        if let color = presentable?.panModalBackgroundColor {
+            backgroundView.backgroundColor = color
+        }
+        
         backgroundView.dimState = .percent(1.0 - (yDisplacementFromShortForm / presentedView.frame.height))
     }
 
